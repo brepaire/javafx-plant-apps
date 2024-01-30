@@ -1,0 +1,75 @@
+[
+    {
+        "IntervalleArrosage": "2 j",
+        "PlantationDe": "avril",
+        "imageUrl": "file:/C:/Users/D'Almeida%20Yannick/Documents/PIIA/ProjetPlante%20(4)/ProjetPlante/src/main/resources/bankImage/Image%20Plante/Aloe%20Vera.jpg",
+        "PlantationA": "août",
+        "DateMiseEnTerre": "2023-04-21",
+        "DureePousse": "7 j",
+        "Nom": "Aloe vera",
+        "Saison": "Été",
+        "Tache": {"2023-04-21": {
+            "Arrosage": "Arroser",
+            "Entretien": "Empoter",
+            "Coupe": "Couper "
+        }},
+        "Vivace": "Oui"
+    },
+    {
+        "Suivi": {
+            "Remarque": "2023-04-21 : Les roses ont été arrosées avec succès",
+            "Graphe": ""
+        },
+        "IntervalleArrosage": "3 j",
+        "PlantationDe": "mars",
+        "imageUrl": "file:/C:/Users/D'Almeida%20Yannick/Documents/PIIA/ProjetPlanteBACKUP%20(1)/ProjetPlante/src/main/resources/bankImage/rose.jpg",
+        "PlantationA": "juin",
+        "DateMiseEnTerre": "2023-04-21",
+        "DureePousse": "25 j",
+        "Nom": "Rose",
+        "Saison": "Automne",
+        "Vivace": "Oui"
+    },
+    {
+        "IntervalleArrosage": "3 j",
+        "PlantationDe": "mars",
+        "imageUrl": "file:/C:/Users/D'Almeida%20Yannick/Documents/PIIA/ProjetPlante%20(4)/ProjetPlante/src/main/resources/bankImage/Image%20Plante/Jonquille.jpg",
+        "PlantationA": "juin",
+        "DateMiseEnTerre": "2023-04-27",
+        "DureePousse": "25 j",
+        "Nom": "Jonquille",
+        "Saison": "Automne",
+        "Tache": {"2023-04-29": {
+            "Recolte": "test",
+            "Arrosage": "test",
+            "Entretien": "test",
+            "Coupe": "test"
+        }},
+        "Vivace": "Oui"
+    },
+    {
+        "IntervalleArrosage": "3 j",
+        "PlantationDe": "mars",
+        "imageUrl": "file:/C:/Users/D'Almeida%20Yannick/Documents/PIIA/ProjetPlante%20(4)/ProjetPlante/src/main/resources/bankImage/Image%20Plante/Jacinthe.jpg",
+        "PlantationA": "juin",
+        "DateMiseEnTerre": "2023-04-20",
+        "DureePousse": "25 j",
+        "Nom": "Jacinthe",
+        "Saison": "Automne",
+        "Tache": {
+            "2023-04-21": {
+                "Recolte": "dsfdfs",
+                "Arrosage": "rfgdrfd",
+                "Entretien": "efef",
+                "Coupe": "effs"
+            },
+            "2023-04-22": {
+                "Recolte": "sdsds",
+                "Arrosage": "sdsd",
+                "Entretien": "dfdfsd",
+                "Coupe": "sdfsd"
+            }
+        },
+        "Vivace": "Oui"
+    }
+]
