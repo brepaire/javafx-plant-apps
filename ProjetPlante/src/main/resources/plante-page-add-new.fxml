@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="planteAddNewAnchorPane" prefHeight="500.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetplante.PlantePageAjoutNewController">
+    <children>
+        <VBox alignment="CENTER" prefHeight="500.0" prefWidth="335.0" spacing="20.0" style="-fx-background-color: #845842; -fx-border-color: black; -fx-border-width: 2px; -fx-border-style: solid;">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+            <children>
+                <BorderPane prefHeight="200.0" prefWidth="200.0">
+                    <center>
+                        <StackPane onMouseClicked="#handleToggleButtonAction" prefHeight="50" prefWidth="108" style="-fx-background-color: #845842; -fx-alignment: center;">
+                            <children>
+                                <Rectangle arcHeight="30" arcWidth="30" fill="#f4bd7f" height="30" width="70" />
+                                <Circle fill="#fcf016" layoutX="-40.0" radius="14.0" translateX="18.0" />
+                            </children>
+                        </StackPane>
+                    </center>
+                    <left>
+                        <Label prefHeight="29.0" prefWidth="98.0" text="Déjà existant ?" translateX="15.0" BorderPane.alignment="CENTER">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                    </left>
+                    <top>
+                        <Label prefHeight="53.0" prefWidth="168.0" text="Ajout de plante" BorderPane.alignment="CENTER">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+                    </top>
+                    <right>
+                        <Label prefHeight="30.0" prefWidth="95.0" text="New plante ?" translateX="-15.0" BorderPane.alignment="CENTER">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                    </right>
+                </BorderPane>
+                <Pane prefHeight="611.0" prefWidth="370.0" style="-fx-background-color: #F4BD7F;">
+                    <children>
+                        <TextField fx:id="nomTextField" layoutX="58.0" layoutY="5.0" prefHeight="16.0" prefWidth="97.0" promptText="Nom" />
+                        <Text layoutX="9.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom : " wrappingWidth="41.0" />
+                        <HBox layoutX="111.0" layoutY="100.0" prefHeight="25.0" prefWidth="326.0" spacing="10">
+                            <TextField fx:id="dureePousseTextField" prefHeight="25.0" prefWidth="104.0" promptText="Durée de pousse" />
+                            <TextField fx:id="unitePousseTextField" prefHeight="25.0" prefWidth="44.0" promptText="Unité" />
+                        </HBox>
+                        <SplitMenuButton fx:id="saisonSplitMenuButton" layoutX="57.0" layoutY="38.0" prefHeight="7.0" prefWidth="97.0" text="Choisir une saison..." />
+                        <Text layoutX="9.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saison : " wrappingWidth="53.0" />
+                        <SplitMenuButton fx:id="vivaceSplitMenuButton" layoutX="64.0" layoutY="71.0" prefHeight="3.0" prefWidth="104.0" text="Oui ou Non..." />
+                        <Text layoutX="9.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vivace :" wrappingWidth="53.0" />
+                        <HBox layoutX="12.0" layoutY="193.0" prefHeight="25.0" prefWidth="278.0" spacing="10">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Intervalle d'arrosage :" wrappingWidth="114.0" />
+                                <TextField fx:id="intervalleArrosageTextField" prefHeight="28.0" prefWidth="114.0" promptText="Intervalle" />
+                                <TextField fx:id="uniteArrosageTextField" prefHeight="26.0" prefWidth="62.0" promptText="Unité" />
+                            </children>
+                        </HBox>
+                         <Label layoutX="10.0" layoutY="132.0" text="Période de plantation de" />
+                         <Text layoutX="10.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Durée de pousse :" wrappingWidth="97.0" />
+                         <SplitMenuButton fx:id="plantationDeSplitMenuButton" layoutX="149.0" layoutY="131.0" prefHeight="25.0" prefWidth="137.0" text="Choisir un mois..." />
+                         <SplitMenuButton fx:id="plantationASplitMenuButton" layoutX="149.0" layoutY="162.0" prefHeight="25.0" prefWidth="137.0" text="Choisir un mois..." />
+                         <Label layoutX="135.0" layoutY="162.0" text="à" />
+                         <Label layoutX="12.0" layoutY="221.0" prefHeight="17.0" prefWidth="126.0" text="Date de mise en terre :" />
+                         <DatePicker fx:id="dateMiseEnTerrePicker" layoutX="135.0" layoutY="226.0" prefHeight="25.0" prefWidth="127.0" promptText="DD/MM/YYYY" />
+                         <Label layoutX="12.0" layoutY="258.0" prefHeight="17.0" prefWidth="126.0" text="Date de récolte :  " />
+                         <DatePicker fx:id="dateRecoltePicker" layoutX="134.0" layoutY="258.0" prefHeight="25.0" prefWidth="130.0" promptText="DD/MM/YYYY" />
+                         <Label fx:id="vivaceLabel" layoutX="106.0" layoutY="260.0" text="Une plante vivace ne se récolte pas" />
+                        <ImageView fx:id="imageView" fitHeight="64.0" fitWidth="73.0" layoutX="214.0" layoutY="7.0" />
+                        <Button fx:id="importImageButton" layoutX="168.0" layoutY="5.0" onAction="#handleImportImageButtonAction" prefHeight="25.0" prefWidth="46.0" text="Img" />
+                        <Label fx:id="imageImportStatusLabel" layoutX="175.0" layoutY="45.0" prefHeight="17.0" prefWidth="126.0" translateY="30.0" />
+                  <Label fx:id="isItAdd" alignment="CENTER" layoutX="9.0" layoutY="286.0" prefHeight="17.0" prefWidth="278.0" />
+                    </children>
+                </Pane>
+                <Button fx:id="saveButton" text="Save" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="335.0" style="-fx-background-color: #845842; -fx-border-color: black; -fx-border-width: 2px; -fx-border-style: solid;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetplante.PlantePageDetailController">
+    <children>
+        <Label fx:id="nomLabel" alignment="CENTER" layoutX="77.0" layoutY="8.0" prefHeight="16.0" prefWidth="181.0" />
+        <TabPane layoutX="22.0" layoutY="30.0" prefHeight="448.0" prefWidth="291.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab style="-fx-background-color: #F4BD7F;" text="Détails">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Pane fx:id="infoDetailPane" prefHeight="420.0" prefWidth="291.0" style="-fx-background-color: #F4BD7F;">
+                                    <children>
+                                        <Text layoutX="7.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saison : " wrappingWidth="62.13671875" />
+                                        <Label fx:id="saisonLabel" layoutX="50.0" layoutY="7.0" prefHeight="17.0" prefWidth="293.0" />
+                                        <Text layoutX="7.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vivace : " wrappingWidth="62.13671875" />
+                                        <Label fx:id="vivaceLabel1" layoutX="57.0" layoutY="24.0" prefHeight="17.0" prefWidth="119.0" />
+                                        <Text layoutX="7.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Durée de pousse :" wrappingWidth="101.13671875" />
+                                        <Label fx:id="dureePousseLabel" layoutX="109.0" layoutY="45.0" prefHeight="17.0" prefWidth="181.0" />
+                                        <Text layoutX="8.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Période de plantation de : " wrappingWidth="144.0" />
+                                        <Label fx:id="finalPlantationLabel" layoutX="152.0" layoutY="62.0" prefHeight="18.0" prefWidth="144.0" />
+                                        <Text layoutX="8.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Intervalle d'arrosage :" wrappingWidth="119.0" />
+                                        <Label fx:id="intervalleArrosageLabel" layoutX="129.0" layoutY="93.0" prefHeight="17.0" prefWidth="119.0" />
+                                        <ImageView fx:id="imageView" fitHeight="95.0" fitWidth="101.0" layoutX="11.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true" />
+                                        <Text layoutX="4.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Photo : " wrappingWidth="42.13671875" />
+                                        <Label layoutX="8.0" layoutY="143.0" prefHeight="17.0" prefWidth="126.0" text="Date de récolte :  " />
+                                        <Label fx:id="recolteLabel" layoutX="112.0" layoutY="143.0" prefHeight="17.0" prefWidth="126.0" />
+                                        <Label layoutX="8.0" layoutY="117.0" prefHeight="17.0" prefWidth="126.0" text="Date de mise en terre :" />
+                                        <Label fx:id="miseEnTerreLabel" layoutX="133.0" layoutY="117.0" prefHeight="17.0" prefWidth="126.0" />
+                                    </children>
+                                </Pane>
+                                <Pane fx:id="editDetailPane" prefHeight="420.0" prefWidth="291.0" style="-fx-background-color: #F4BD7F;">
+                                    <children>
+                                        <HBox layoutX="111.0" layoutY="100.0" prefHeight="25.0" prefWidth="326.0" spacing="10">
+                                            <TextField fx:id="dureePousseTextField" prefHeight="25.0" prefWidth="104.0" promptText="Durée de pousse" />
+                                            <TextField fx:id="unitePousseTextField" prefHeight="25.0" prefWidth="44.0" promptText="Unité" />
+                                        </HBox>
+                                        <SplitMenuButton fx:id="saisonSplitMenuButton" layoutX="60.0" layoutY="18.0" prefHeight="7.0" prefWidth="97.0" text="Choisir une saison..." />
+                                        <Text layoutX="12.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saison : " wrappingWidth="53.0" />
+                                        <SplitMenuButton fx:id="vivaceSplitMenuButton" layoutX="65.0" layoutY="59.0" prefHeight="3.0" prefWidth="104.0" text="Oui ou Non..." />
+                                        <Text layoutX="10.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vivace :" wrappingWidth="53.0" />
+                                        <HBox layoutX="12.0" layoutY="193.0" prefHeight="25.0" prefWidth="278.0" spacing="10">
+                                            <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Intervalle d'arrosage :" wrappingWidth="114.0" />
+                                                <TextField fx:id="intervalleArrosageTextField" prefHeight="28.0" prefWidth="114.0" promptText="Intervalle" />
+                                                <TextField fx:id="uniteArrosageTextField" prefHeight="26.0" prefWidth="62.0" promptText="Unité" />
+                                            </children>
+                                        </HBox>
+                                        <Label layoutX="10.0" layoutY="132.0" text="Période de plantation de" />
+                                        <Text layoutX="10.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Durée de pousse :" wrappingWidth="97.0" />
+                                        <SplitMenuButton fx:id="plantationDeSplitMenuButton" layoutX="149.0" layoutY="131.0" prefHeight="25.0" prefWidth="137.0" text="Choisir un mois..." />
+                                        <SplitMenuButton fx:id="plantationASplitMenuButton" layoutX="149.0" layoutY="162.0" prefHeight="25.0" prefWidth="137.0" text="Choisir un mois..." />
+                                        <Label layoutX="135.0" layoutY="162.0" text="à" />
+                                        <Label layoutX="16.0" layoutY="249.0" prefHeight="17.0" prefWidth="126.0" text="Date de mise en terre :" />
+                                        <DatePicker fx:id="dateMiseEnTerrePicker" layoutX="139.0" layoutY="245.0" prefHeight="25.0" prefWidth="127.0" promptText="DD/MM/YYYY" />
+                                        <Label layoutX="17.0" layoutY="287.0" prefHeight="17.0" prefWidth="126.0" text="Date de récolte :  " />
+                                        <DatePicker fx:id="dateRecoltePicker" layoutX="139.0" layoutY="287.0" prefHeight="25.0" prefWidth="130.0" promptText="DD/MM/YYYY" />
+                                        <Label fx:id="vivaceLabel2" layoutX="111.0" layoutY="289.0" text="Une plante vivace ne se récolte pas" />
+                                        <ImageView fx:id="addImageView" fitHeight="64.0" fitWidth="73.0" layoutX="214.0" layoutY="7.0" />
+                                        <Button fx:id="importImageButton" layoutX="168.0" layoutY="5.0" onAction="#handleImportImageButtonAction" prefHeight="25.0" prefWidth="46.0" text="Img" />
+                                        <Label fx:id="imageImportStatusLabel" layoutX="175.0" layoutY="45.0" prefHeight="17.0" prefWidth="126.0" translateY="30.0" />
+                                        <Button fx:id="saveButton" layoutX="112.0" layoutY="362.0" mnemonicParsing="false" text="Save" />
+                                    </children>
+                                </Pane>
+                                <HBox layoutX="45.0" layoutY="393.0" prefHeight="25.0" prefWidth="209.0">
+                                    <Button fx:id="deleteButton" onAction="#handleDeleteButtonClick" text="Supprimer" />
+                                    <Button fx:id="editButton" onAction="#handleEditButtonClick" prefHeight="25.0" prefWidth="68.0" text="Modifier" />
+                                    <Button fx:id="closeButton" onAction="#handleCloseButtonClick" prefWidth="56.0" text="Fermer" />
+                                </HBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab style="-fx-background-color: #F4BD7F;" text="Taches">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Pane fx:id="taskDetailPane" prefHeight="420.0" prefWidth="291.0" style="-fx-background-color: #F4BD7F;">
+                                   <children>
+                              <Text fx:id="planteTask2" layoutX="42.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="141.13671875" />
+                                      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tache à effectuer pour " wrappingWidth="105.13671875" />
+                              <Button fx:id="editTaskButton" layoutX="29.0" layoutY="390.0" mnemonicParsing="false" onAction="#handleEditTaskButtonClick" text="Modifier les taches" />
+                              <Button fx:id="deleteTaskButton" layoutX="145.0" layoutY="390.0" mnemonicParsing="false" onAction="#handleDeleteTaskButtonClick" text="Supprimer les taches" />
+                              <ScrollPane layoutX="28.0" layoutY="54.0" prefHeight="311.0" prefWidth="236.0" style="-fx-background-color: #f8d5ae;">
+                                 <content>
+                                    <Text fx:id="tacheText" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="196.13671875" />
+                                 </content>
+                              </ScrollPane>
+                                   </children>
+                                </Pane>
+                                <Pane fx:id="addTaskDetailPane" prefHeight="420.0" prefWidth="291.0" style="-fx-background-color: #F4BD7F;">
+                                   <children>
+                                      <Button fx:id="saveTaskButton" layoutX="27.0" layoutY="381.0" mnemonicParsing="false" onAction="#handleSaveTaskButtonClick" prefHeight="25.0" prefWidth="88.0" text="Sauvegarder" />
+                              <TextArea fx:id="textAreaArrosageTask" layoutX="27.0" layoutY="119.0" prefHeight="17.0" prefWidth="237.0" />
+                              <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter une taches pour  " wrappingWidth="135.13671875" />
+                              <Text layoutX="27.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tache pour l'arrosage " wrappingWidth="128.13671875" />
+                              <CheckBox fx:id="checkBoxArrosageTask" layoutX="147.0" layoutY="95.0" mnemonicParsing="false" />
+                              <TextArea fx:id="textAreaEntretienTask" layoutX="27.0" layoutY="189.0" prefHeight="17.0" prefWidth="237.0" />
+                              <Text layoutX="27.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tache pour l'entretien" wrappingWidth="128.13671875" />
+                              <CheckBox fx:id="checkBoxEntretienTask" layoutX="147.0" layoutY="165.0" mnemonicParsing="false" />
+                              <TextArea fx:id="textAreaCoupeTask" layoutX="27.0" layoutY="260.0" prefHeight="17.0" prefWidth="237.0" />
+                              <Text layoutX="27.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tache pour la coupe" wrappingWidth="128.13671875" />
+                              <CheckBox fx:id="checkBoxCoupeTask" layoutX="147.0" layoutY="236.0" mnemonicParsing="false" />
+                              <TextArea fx:id="textAreaRecolteTask" layoutX="27.0" layoutY="336.0" prefHeight="17.0" prefWidth="237.0" />
+                              <Text layoutX="27.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tache pour la récolte" wrappingWidth="128.13671875" />
+                              <CheckBox fx:id="checkBoxRecolteTask" layoutX="147.0" layoutY="312.0" mnemonicParsing="false" />
+                              <Text fx:id="planteTask1" layoutX="145.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="105.13671875" />
+                              <Button fx:id="saveEditTaskButton" layoutX="38.0" layoutY="381.0" mnemonicParsing="false" onAction="#handleSaveEditTaskButtonClick" text="Modifier" />
+                              <DatePicker fx:id="datePickerRecurrenceTask" layoutX="27.0" layoutY="62.0" prefHeight="25.0" prefWidth="129.0" />
+                              <Text layoutX="27.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jour :" wrappingWidth="135.13671875" />
+                              <Text layoutX="162.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Récurrence : " wrappingWidth="89.13671875" />
+                              <SplitMenuButton fx:id="splitMenuButtonRecurrenceTask" layoutX="163.0" layoutY="62.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="106.0" text="Temps...">
+                                <items>
+                                  <MenuItem mnemonicParsing="false" text="Journalier" />
+                                  <MenuItem mnemonicParsing="false" text="Hebdomadaire" />
+                                    <MenuItem mnemonicParsing="false" text="Mensuel" />
+                                </items>
+                              </SplitMenuButton>
+                              <CheckBox fx:id="checkBoxRecurrenceTask" layoutX="233.0" layoutY="39.0" mnemonicParsing="false" />
+                              <SplitMenuButton fx:id="splitMenuButtonDateEditTask" layoutX="26.0" layoutY="62.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Date des taches.." />
+                                   </children>
+                                </Pane>
+                                <Button fx:id="addTaskButton" layoutX="160.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleAddTaskButtonClick" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab style="-fx-background-color: #F4BD7F;" text="Suivis">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Pane fx:id="addSuiviDetailPane" prefHeight="420.0" prefWidth="291.0" style="-fx-background-color: #F4BD7F;">
+                                    <children>
+                                        <Button fx:id="saveSuiviButton" layoutX="97.0" layoutY="363.0" mnemonicParsing="false" onAction="#handleSaveSuiviButtonClick" text="Sauvegarder" />
+                                        <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter un suivi pour  " wrappingWidth="135.13671875" />
+                                        <Text fx:id="planteSuivi2" layoutX="128.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="105.13671875" />
+                                        <Button fx:id="saveEditSuiviButton" layoutX="107.0" layoutY="363.0" mnemonicParsing="false" onAction="#handleSaveEditSuiviButtonClick" text="Modifier" />
+                                        <DatePicker fx:id="suiviDatePicker" layoutX="10.0" layoutY="72.0" />
+                                        <Text fx:id="dateID" layoutX="10.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date du suivi : " wrappingWidth="135.13671875" />
+                                        <Text layoutX="14.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remarque : " wrappingWidth="135.13671875" />
+                                        <TextArea fx:id="suiviTextArea" layoutX="12.0" layoutY="151.0" prefHeight="200.0" prefWidth="252.0" />
+                                        <Text fx:id="graphiqueText" layoutX="32.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Graphique des données de suivi bientôt disponible" wrappingWidth="211.13671875" />
+                                    </children>
+                                </Pane>
+                                <Pane fx:id="suiviDetailPane" prefHeight="420.0" prefWidth="291.0" style="-fx-background-color: #F4BD7F;">
+                                    <children>
+                                        <Text fx:id="planteSuivi" layoutX="69.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="141.13671875" />
+                                        <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suivi pour " wrappingWidth="105.13671875" />
+                                        <Button fx:id="editSuiviButton" layoutX="29.0" layoutY="390.0" mnemonicParsing="false" onAction="#handleEditSuiviButtonClick" text="Modifier les suivis" />
+                                        <Button fx:id="deleteSuiviButton" layoutX="145.0" layoutY="390.0" mnemonicParsing="false" onAction="#handleDeleteSuiviButtonClick" text="Supprimer les suivis" />
+                                        <ScrollPane layoutX="28.0" layoutY="54.0" prefHeight="311.0" prefWidth="236.0" style="-fx-background-color: #f8d5ae;">
+                                            <content>
+                                                <Text fx:id="suiviText" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="233.13671875" />
+                                            </content>
+                                        </ScrollPane>
+                                    </children>
+                                </Pane>
+                                <Button fx:id="addSuiviButton" layoutX="180.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleAddSuiviButtonClick" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
