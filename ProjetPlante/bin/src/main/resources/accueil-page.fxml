@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainAnchorPane" onMouseClicked="#handleMouseClick" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetplante.AccueilPageController">
+    <VBox alignment="CENTER" prefHeight="860" prefWidth="540" spacing="20.0">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        </padding>
+        <children>
+            <Label alignment="BOTTOM_CENTER" prefHeight="854.0" prefWidth="377.0" text="Cliquez pour commencer à jardiner" />
+        </children>
+    </VBox>
+</AnchorPane>

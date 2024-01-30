@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.layout.BorderPane?>
+<AnchorPane fx:id="homeAnchorPane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetplante.HomePageController">
+    <children>
+        <VBox alignment="CENTER" prefHeight="860" prefWidth="540" spacing="20.0" style="-fx-background-color: #845842;">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+            <children>
+                 <Label prefHeight="35.0" prefWidth="75.0" text="Home">
+                     <font>
+                         <Font size="24.0" />
+                     </font>
+                 </Label>
+                <Pane prefHeight="822.0" prefWidth="500.0" style="-fx-background-color: #F4BD7F;" />
+            </children>
+        </VBox>
+        <!-- Modifiez ce HBox pour les éléments cliquables en bas de l'écran -->
+        <HBox layoutY="810" prefHeight="50" prefWidth="540" spacing="0">
+            <StackPane onMouseClicked="#handleHomeClick" prefHeight="50" prefWidth="108" style="-fx-background-color: #845842; -fx-alignment: center;">
+                <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #000000;">
+                    <center>
+                        <Label prefWidth="33.0" text="Home" BorderPane.alignment="CENTER" />
+                    </center>
+                    <bottom>
+                        <Circle fill="WHITE" radius="3.0" stroke="WHITE" strokeType="INSIDE" translateY="-10.0" BorderPane.alignment="CENTER" />
+                    </bottom>
+                </BorderPane>
+            </StackPane>
+            <StackPane onMouseClicked="#handlePlanteClick" prefHeight="50" prefWidth="108" style="-fx-background-color: #845842; -fx-alignment: center;">
+                <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #000000;">
+                    <center>
+                        <Label text="Plante" BorderPane.alignment="CENTER" />
+                    </center>
+                </BorderPane>
+            </StackPane>
+            <StackPane onMouseClicked="#handleCalendrierClick" prefHeight="50" prefWidth="108" style="-fx-background-color: #845842; -fx-alignment: center;">
+                <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #000000;">
+                    <center>
+                        <Label text="Calendrier" BorderPane.alignment="CENTER" />
+                    </center>
+                </BorderPane>
+            </StackPane>
+            <StackPane onMouseClicked="#handleEncyclopedieClick" prefHeight="50" prefWidth="108" style="-fx-background-color: #845842; -fx-alignment: center;">
+                <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #000000;">
+                    <center>
+                        <Label text="Encyclopédie" BorderPane.alignment="CENTER" />
+                    </center>
+                </BorderPane>
+            </StackPane>
+            <StackPane onMouseClicked="#handleParametreClick" prefHeight="50" prefWidth="108" style="-fx-background-color: #845842; -fx-alignment: center;">
+                <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #000000;">
+                    <center>
+                        <Label text="Paramètre" BorderPane.alignment="CENTER" />
+                    </center>
+                </BorderPane>
+            </StackPane>
+        </HBox>
+    </children>
+</AnchorPane>

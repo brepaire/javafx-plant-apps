@@ -1,0 +1,65 @@
+[
+    {
+        "IntervalleArrosage": "2 jours",
+        "PlantationDe": "avril",
+        "PlantationA": "septembre",
+        "DureePousse": "7 jours",
+        "Nom": "Menthe",
+        "Saison": "Été",
+        "Vivace": "Oui"
+    },
+    {
+        "IntervalleArrosage": "2 jours",
+        "PlantationDe": "avril",
+        "PlantationA": "septembre",
+        "DureePousse": "7 jours",
+        "Nom": "Marguerite",
+        "Saison": "Printemps",
+        "Vivace": "Oui"
+    },
+    {
+        "IntervalleArrosage": "2 jours",
+        "PlantationDe": "avril",
+        "PlantationA": "septembre",
+        "DureePousse": "7 jours",
+        "Nom": "Cosmos",
+        "Saison": "Printemps",
+        "Vivace": "Non"
+    },
+    {
+        "IntervalleArrosage": "2 jours",
+        "PlantationDe": "avril",
+        "PlantationA": "septembre",
+        "DureePousse": "7 jours",
+        "Nom": "Pensée",
+        "Saison": "Printemps",
+        "Vivace": "Non"
+    },
+    {
+        "IntervalleArrosage": "2 jours",
+        "PlantationDe": "avril",
+        "PlantationA": "septembre",
+        "DureePousse": "7 jours",
+        "Nom": "Tulipe",
+        "Saison": "Printemps",
+        "Vivace": "Oui"
+    },
+    {
+        "IntervalleArrosage": "2 jours",
+        "PlantationDe": "avril",
+        "PlantationA": "septembre",
+        "DureePousse": "7 jours",
+        "Nom": "Jonquille",
+        "Saison": "Printemps",
+        "Vivace": "Oui"
+    },
+    {
+        "IntervalleArrosage": "2 jours",
+        "PlantationDe": "avril",
+        "PlantationA": "septembre",
+        "DureePousse": "7 jours",
+        "Nom": "Rose",
+        "Saison": "Printemps",
+        "Vivace": "Oui"
+    }
+]
